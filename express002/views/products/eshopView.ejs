@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+
+<body>
+
+    <a href="/products/eshop/basket">Add Product</a>
+
+    <ul>
+        <select name="prod" id="prod">
+            <% for(var i = 0; i < list.length; i++) { %>
+
+            <option value="volvo"> <%= `Product: ${list[i].name}\t Price: ${list[i].price} ` %>&nbsp;</option>
+
+            <% } %>
+        </select>
+    </ul>
+
+
+
+
+
+
+
+</body>
+
+</html>
